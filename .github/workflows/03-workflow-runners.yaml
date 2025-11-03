@@ -18,6 +18,13 @@ jobs:
             - name: Show OS
               shell: bash
               run: |
-                echo "this job is running on an Windoes runner"
+                echo "this job is running on an Windows runner"
+                echo "Runner OS: $RUNNER_OS"
+    mac-echo:
+        runs-on: macos-latest
+        steps:
+            - name: Show oS
+              run: |
+                echo "this job is running on an MacOS runner"
                 echo "Runner OS: $RUNNER_OS"
 
